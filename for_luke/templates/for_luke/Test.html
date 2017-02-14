@@ -1,0 +1,12 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Really hard question (Attempt {{ subsession.round_number }} of {{ Constants.num_rounds }})
+{% endblock %}
+
+{% block content %}
+{{form}}
+    {% next_button %}
+
+{% endblock %}
